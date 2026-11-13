@@ -1,5 +1,0 @@
-*.syx
-*.syx.json
-*.syx.map.json
-src/*/out/
-.deps/
