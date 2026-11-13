@@ -1,0 +1,12 @@
+{
+ "id": "cc-hold", "version": "2.0",
+ "license": "GPL-2.0-or-later",
+ "title": "CC HOLD", "category": "MIDI", "author": "jack",
+ "description": "When a MIDI track resyncs (after STOP -> PLAY, transport from a DAW/Overbridge, or the engine's own reset), its CC VAL / PB / AT / MW / BC values are sent only if they differ from the last value sent on that channel and CC, instead of always. External synths keep the knob positions you set by hand. Knob turns and p-locks still always send. Digitone mk1 / Keys OS 1.44: the full-resync loop at 0x400f44ca passes force=0 to the CC sender 0x400f3c4a, which then compares with its last-sent cache at 0x4321f19c.",
+ "device": "digitone-mk1", "os": "1.44",
+ "sources": [],
+ "requires": ["core"],
+ "sites": [
+  {"addr": "0x400f44ca", "stock": "48780001", "op": "bytes", "new": "48780000", "kind": "code"}
+ ]
+}

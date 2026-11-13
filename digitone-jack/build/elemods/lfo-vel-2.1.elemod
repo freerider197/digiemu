@@ -1,0 +1,828 @@
+{
+ "elemod": 2,
+ "id": "lfo-vel",
+ "version": "2.1",
+ "title": "LFO VELOCITY + HUM",
+ "description": "MIDI track LFO: the destination that was Aftertouch now modulates note velocity (shown as SRC:Velocity in the list and VEL on the knob; the MIDI Source page AT knob also reads VEL). No aftertouch messages are sent by the LFO. HUM (knob E on the MIDI TRIG page, 0-60): random velocity of -HUM..+HUM per trig, same for all notes of a chord; press knob E to reset. With HUM on, two trigs in a row are always at least 15 apart in velocity.",
+ "category": "MIDI",
+ "author": "jack",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitone-mk1",
+  "product": "Digitone mk1",
+  "os": "1.44",
+  "syx_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+  "section3_sha256": "fce648a97c6c5d93b961732e8f8db6b02e0820c6d344c7e2131fa05a4b3168e4",
+  "section3_len": 2736304
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 2354,
+   "parts": [
+    [
+     "hex",
+     "7000102a0023"
+    ],
+    [
+     "stock",
+     "0x4003024a",
+     8
+    ],
+    [
+     "hex",
+     "000000004fef000c1f40004b4e7523df00000000202f00087216b08167064eb9400f3c4a4fef00142f39000000004e750000103941368ce3207941a0a7fc720371805980b28065344a3900000000673071b9000000004a80662220080680bffffff00c8007ffffef62122028fff00c8040198694"
+    ],
+    [
+     "stock",
+     "0x400079e8",
+     8
+    ],
+    [
+     "hex",
+     "42804e75103941368ce7718060cc4fefffe0700348d70cfc282f0028b084650001f0705074164c0408002040d1fc419eb2142210b481670001662040d1fc419eb23c20107616b68067000170202f00240c80000000806c00011e4a806f00012c41f9000000007b3048004a856f0000fe4aaf002c660001ea26457a3cba8b6d00019e260b7c04d68343f90000000020714c0024390000000052837e0d7a112202efa9b5812401eaaab3822202eb89b58124012a01efaa4c435007b3827a1124472202eaa9b5812401eb8ab3822a024c43500145f21801220ae281928bd2800c81000000806d0000ee2a3c000000fe9a81220524412e08538695c89e814a886700017c7a0eb2886f0000dcba8a6d044a86668823c200000000b2886f00012224017e0e9488be826d34220806810000000f41e8fff10c81000000806c0001104a886f1ab2806f0001422601240896809480b1c06f000138b4836d0000f2200141f90000000023804c0021804c00"
+    ],
+    [
+     "stock",
+     "0x400241ec",
+     10
+    ],
+    [
+     "hex",
+     "41f900000000707f7b3048004a856e00feea60e241f90000000070017b3048004a856e00fed660ce22280004e0812040d1fc419eb23c20107616d3af0024b6806600fe9420280004e080d1af0024202f00240c80000000806d00fe8a60a24a816e00ff1a7e029e8122076000ff10ba876c00ff2623c200000000740eb4876d00ff66220806810000000f41e8fff10c81000000806c406000ff304cd70cfc202f00244fef00204e75367c003c43f9000000007c0420714c00260bd68324390000000052836000fe5e2e08740e9e81b4876d00ff1460ac200841f90000000023804c0021804c006000ff0e41f90000000022304c004a816700fefe4cd70cfc20014fef00204e7523c20000000020016000fed82600968124009488b4836c00fec860b42f0370052f02206f001024280010b0a8000c6708"
+    ],
+    [
+     "stock",
+     "0x4013c378",
+     8
+    ],
+    [
+     "hex",
+     "4ebafd004a8067f04a390000000067e82002d0b90000000024390000000023c000000000b4806e6c428190825281b4806ff823c000000000103941368ce341f9000000007180598075300800d282743cb4816d204a816d2c11810800700113c000000000745a700123c200000000241f261f4e75723c11810800700113c00000000060e0428111810800700113c00000000060d026024483b6806dc84281d0825381b6806d8cd0825381b6806cf060822f03720b2f02206f0010242800102028000cc28253814a81672c7632b6806708"
+    ],
+    [
+     "stock",
+     "0x400ac8e0",
+     8
+    ],
+    [
+     "hex",
+     "4ebafc284a8067f04a390000000067e853824a826734"
+    ],
+    [
+     "stock",
+     "0x4008a46c",
+     8
+    ],
+    [
+     "hex",
+     "7213b2806cd47619b6806dc80680ffffffec13c0000000007001420113c00000000013c100000000428060b07201103941368ce341f900000000765a23c30000000013c10000000042017180118108fc700160a64a39000000006728103941368ce773b9000000007180b280674a1039000000005280738013c0000000007006b08165342039000000004a806720538023c0000000004a8066144200206f000413c0000000007001114000204e754a390000000066e44e75420013c00000000060c24200"
+    ],
+    [
+     "stock",
+     "0x40020c14",
+     8
+    ],
+    [
+     "hex",
+     "2c6f003c13c0000000004ebafb344a806714206e00104a88670c223c00000080b2ae0004670a"
+    ],
+    [
+     "stock",
+     "0x40020c98",
+     8
+    ],
+    [
+     "hex",
+     "4e757a40baae000866ee2a0806850000015043e800d07629428424452203e6812c3c0000014f7a01243c000000cf102900029c8194811e1173b068007c07cc8375b02800c08543e900105483ce85eca2eca1c485c285d087d082d081d880b5c966ba7c1bbc846c907e0143f900000000723c7c012a3c000000c713c700000000103941368ce37180103108fc140071002f4000344882c5fc002806820000001e4c412802722778077e3ac8812001e6802245528193c02006d3c81611e9a84680c0831280be8166de50850c850000015f66d243f900000000760171110680000000212800e78c0c80000000806432102900017a075e847c3f73000680000000307180068100000030ca81e681bc806510244495c1d5c820031212eba8808114805489b3fc0000000066b07e28be826d0001704a826d00019643f900000000702179312a017f312a00224443e9003024472f49003045ea0021b08a6c6c387c00017230b2af00306c0001b83a7c0001448424047230d48770212f47002c2a01e68526007c07e78b26452a02cc81da850c800000008064187e3fbe81651222435e8993cbd3c87e011611edaf86871283b08a671eba846d0ad484d08cbaaf002c6ebcd4af002cd28d60b4387cffff44876090b2af003066dc4ab9000000006700011a2f2f003448790000000048780022"
+    ],
+    [
+     "stock",
+     "0x400c11c6",
+     8
+    ],
+    [
+     "hex",
+     "2f3c"
+    ],
+    [
+     "stock",
+     "0x40042f4c",
+     16
+    ],
+    [
+     "hex",
+     "4ab9000000006700fde842a7267c400dd506"
+    ],
+    [
+     "stock",
+     "0x4003e81c",
+     12
+    ],
+    [
+     "hex",
+     "487800112f0e246e00104e932f2f004c487900000000"
+    ],
+    [
+     "stock",
+     "0x4003e854",
+     8
+    ],
+    [
+     "hex",
+     "00142f3c"
+    ],
+    [
+     "stock",
+     "0x40042f4c",
+     14
+    ],
+    [
+     "hex",
+     "0034"
+    ],
+    [
+     "stock",
+     "0x4003e818",
+     16
+    ],
+    [
+     "hex",
+     "487800112f0e4e934fef00184a8a6700fd80322a008e302a03fe0281fffffdfe0280fffffdfe3541008e354003fe"
+    ],
+    [
+     "stock",
+     "0x40020c98",
+     8
+    ],
+    [
+     "hex",
+     "4e757428702143f90000000079312a017f312a00224443e9003024472f49003045ea0021b08a6d00fe966000fefe428243f900000000702179312a017f312a00224443e9003024472f49003045ea0021b08a6d00fe6a6000fed248790000000048780022"
+    ],
+    [
+     "stock",
+     "0x400c11c6",
+     8
+    ],
+    [
+     "hex",
+     "2f3c"
+    ],
+    [
+     "stock",
+     "0x40042f4c",
+     14
+    ],
+    [
+     "hex",
+     "00186000feea240472303a7cffffd48770212f47002c6000fe4a00002545f49100000006fef8fff800f801f802f8fcf9fdf903f904f9fbfa05fafafb06fbf9fc07fcf9fd07fdf8fe08fef8ff08fff8000800f8010801f8020802f9030703f9040704fa050605fb060506fc07fd0703070407fe08ff08000801080208fb05fb04fa04fa03f902f901f901f900f9fff9fefafdfafdfafcfbfbfbfbfcfafdfafef9fef9fff900f901f902f902f903fa04fa05fb05fb06fc06fd06fd07fe07ff0700070107010702060306040504050525640048554d"
+    ],
+    [
+     "stock",
+     "0x401decbc",
+     8
+    ],
+    [
+     "hex",
+     "792048756d616e697a653d256400"
+    ]
+   ]
+  },
+  ".bss": {
+   "align": 4,
+   "size": 55
+  }
+ },
+ "symbols": {
+  "CC_SENDER": [
+   "abs",
+   1074740298
+  ],
+  "lfovel_ret": [
+   ".bss",
+   0
+  ],
+  "on_midi_trig_page": [
+   ".run",
+   64
+  ],
+  "pg_on": [
+   ".bss",
+   53
+  ],
+  "pg_pend": [
+   ".bss",
+   54
+  ],
+  "last_vel": [
+   ".bss",
+   24
+  ],
+  "rng": [
+   ".run",
+   2148
+  ],
+  "chord_vel": [
+   ".bss",
+   8
+  ],
+  "vis": [
+   ".bss",
+   40
+  ],
+  "hacc": [
+   ".bss",
+   48
+  ],
+  "hdirty": [
+   ".bss",
+   46
+  ],
+  "show_value": [
+   ".bss",
+   42
+  ],
+  "pg_age": [
+   ".bss",
+   52
+  ],
+  "ring.0": [
+   ".run",
+   2156
+  ],
+  "hum_ptr": [
+   ".run",
+   2244
+  ],
+  "lfovel_note": [
+   ".run",
+   0
+  ],
+  "lfovel_key": [
+   ".run",
+   1006
+  ],
+  "lfovel_mod": [
+   ".run",
+   28
+  ],
+  "lfovel_enc": [
+   ".run",
+   802
+  ],
+  "lfovel_tick": [
+   ".run",
+   1160
+  ],
+  "lfovel_velocity": [
+   ".run",
+   152
+  ],
+  "lfovel_hum": [
+   ".bss",
+   4
+  ],
+  "lfovel_counts_per_step": [
+   ".run",
+   2152
+  ],
+  "lfovel_draw": [
+   ".run",
+   1270
+  ]
+ },
+ "exports": [
+  "lfovel_counts_per_step",
+  "lfovel_draw",
+  "lfovel_enc",
+  "lfovel_hum",
+  "lfovel_key",
+  "lfovel_mod",
+  "lfovel_note",
+  "lfovel_tick",
+  "lfovel_velocity"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   14,
+   "abs32",
+   "sec:.run",
+   152
+  ],
+  [
+   ".run",
+   30,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   56,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   88,
+   "abs32",
+   "sec:.bss",
+   53
+  ],
+  [
+   ".run",
+   96,
+   "abs32",
+   "sec:.bss",
+   54
+  ],
+  [
+   ".run",
+   236,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   276,
+   "abs32",
+   "sec:.bss",
+   24
+  ],
+  [
+   ".run",
+   286,
+   "abs32",
+   "sec:.run",
+   2148
+  ],
+  [
+   ".run",
+   414,
+   "abs32",
+   "sec:.run",
+   2148
+  ],
+  [
+   ".run",
+   490,
+   "abs32",
+   "sec:.bss",
+   8
+  ],
+  [
+   ".run",
+   514,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   534,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   630,
+   "abs32",
+   "sec:.run",
+   2148
+  ],
+  [
+   ".run",
+   686,
+   "abs32",
+   "sec:.bss",
+   24
+  ],
+  [
+   ".run",
+   702,
+   "abs32",
+   "sec:.run",
+   2148
+  ],
+  [
+   ".run",
+   730,
+   "abs32",
+   "sec:.bss",
+   8
+  ],
+  [
+   ".run",
+   748,
+   "abs32",
+   "sec:.bss",
+   8
+  ],
+  [
+   ".run",
+   776,
+   "abs32",
+   "sec:.run",
+   2148
+  ],
+  [
+   ".run",
+   840,
+   "abs32",
+   "sec:.bss",
+   40
+  ],
+  [
+   ".run",
+   850,
+   "abs32",
+   "sec:.bss",
+   48
+  ],
+  [
+   ".run",
+   856,
+   "abs32",
+   "sec:.run",
+   2152
+  ],
+  [
+   ".run",
+   862,
+   "abs32",
+   "sec:.bss",
+   48
+  ],
+  [
+   ".run",
+   882,
+   "abs32",
+   "sec:.bss",
+   48
+  ],
+  [
+   ".run",
+   894,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   926,
+   "abs32",
+   "sec:.bss",
+   46
+  ],
+  [
+   ".run",
+   936,
+   "abs32",
+   "sec:.bss",
+   42
+  ],
+  [
+   ".run",
+   956,
+   "abs32",
+   "sec:.bss",
+   46
+  ],
+  [
+   ".run",
+   972,
+   "abs32",
+   "sec:.bss",
+   46
+  ],
+  [
+   ".run",
+   1056,
+   "abs32",
+   "sec:.bss",
+   40
+  ],
+  [
+   ".run",
+   1096,
+   "abs32",
+   "sec:.bss",
+   54
+  ],
+  [
+   ".run",
+   1106,
+   "abs32",
+   "sec:.bss",
+   53
+  ],
+  [
+   ".run",
+   1112,
+   "abs32",
+   "sec:.bss",
+   52
+  ],
+  [
+   ".run",
+   1130,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   1138,
+   "abs32",
+   "sec:.bss",
+   42
+  ],
+  [
+   ".run",
+   1144,
+   "abs32",
+   "sec:.bss",
+   46
+  ],
+  [
+   ".run",
+   1162,
+   "abs32",
+   "sec:.bss",
+   53
+  ],
+  [
+   ".run",
+   1176,
+   "abs32",
+   "sec:.bss",
+   54
+  ],
+  [
+   ".run",
+   1188,
+   "abs32",
+   "sec:.bss",
+   52
+  ],
+  [
+   ".run",
+   1198,
+   "abs32",
+   "sec:.bss",
+   52
+  ],
+  [
+   ".run",
+   1210,
+   "abs32",
+   "sec:.bss",
+   42
+  ],
+  [
+   ".run",
+   1222,
+   "abs32",
+   "sec:.bss",
+   42
+  ],
+  [
+   ".run",
+   1238,
+   "abs32",
+   "sec:.bss",
+   46
+  ],
+  [
+   ".run",
+   1252,
+   "abs32",
+   "sec:.bss",
+   46
+  ],
+  [
+   ".run",
+   1264,
+   "abs32",
+   "sec:.bss",
+   53
+  ],
+  [
+   ".run",
+   1286,
+   "abs32",
+   "sec:.bss",
+   40
+  ],
+  [
+   ".run",
+   1434,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   1450,
+   "abs32",
+   "sec:.bss",
+   40
+  ],
+  [
+   ".run",
+   1538,
+   "abs32",
+   "sec:.run",
+   2156
+  ],
+  [
+   ".run",
+   1618,
+   "abs32",
+   "sec:.run",
+   2244
+  ],
+  [
+   ".run",
+   1640,
+   "abs32",
+   "sec:.run",
+   2244
+  ],
+  [
+   ".run",
+   1798,
+   "abs32",
+   "sec:.bss",
+   42
+  ],
+  [
+   ".run",
+   1812,
+   "abs32",
+   "sec:.run",
+   2326
+  ],
+  [
+   ".run",
+   1848,
+   "abs32",
+   "sec:.bss",
+   42
+  ],
+  [
+   ".run",
+   1894,
+   "abs32",
+   "sec:.run",
+   2333
+  ],
+  [
+   ".run",
+   2004,
+   "abs32",
+   "sec:.run",
+   2244
+  ],
+  [
+   ".run",
+   2046,
+   "abs32",
+   "sec:.run",
+   2244
+  ],
+  [
+   ".run",
+   2088,
+   "abs32",
+   "sec:.run",
+   2329
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x400f4846",
+   "len": 6,
+   "stock_sha256": "5800a0443ec91bb7ba410246740bdbb4cf573d9ac2ab6b6bb2fe2ff8dae33e2a",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:lfovel_note",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400f4792",
+   "len": 8,
+   "stock_sha256": "68328c742b7f26660f49b5121e46a1b475bbcd96b1772c771d54f3a960467d43",
+   "new": "4eb9000000004e71",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:lfovel_mod",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4018f6b4",
+   "len": 4,
+   "stock_sha256": "8f39b9939fbd9199b095947a4262a5d32ab1475700c7db9007a38b5c83c2c353",
+   "new": "401d6667",
+   "kind": "data",
+   "relocs": []
+  },
+  {
+   "addr": "0x4018f6bc",
+   "len": 4,
+   "stock_sha256": "7c8ce92ebd45814bb774e2777b132ee2552ebb5afb55dad791e4ad1f1461bcab",
+   "new": "401dcb24",
+   "kind": "data",
+   "relocs": []
+  }
+ ],
+ "collections": {},
+ "contribute": [
+  {
+   "to": "ev_enc",
+   "order": 40,
+   "data": "00000000",
+   "relocs": [
+    [
+     0,
+     "abs32",
+     "sym:lfovel_enc",
+     0
+    ]
+   ],
+   "claims": []
+  },
+  {
+   "to": "ev_key",
+   "order": 40,
+   "data": "00000000",
+   "relocs": [
+    [
+     0,
+     "abs32",
+     "sym:lfovel_key",
+     0
+    ]
+   ],
+   "claims": []
+  },
+  {
+   "to": "ev_draw",
+   "order": 60,
+   "data": "00000000",
+   "relocs": [
+    [
+     0,
+     "abs32",
+     "sym:lfovel_draw",
+     0
+    ]
+   ],
+   "claims": []
+  },
+  {
+   "to": "ev_tick",
+   "order": 60,
+   "data": "00000000",
+   "relocs": [
+    [
+     0,
+     "abs32",
+     "sym:lfovel_tick",
+     0
+    ]
+   ],
+   "claims": []
+  }
+ ],
+ "copied": [],
+ "resources": {},
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "glue.s": "0a6cd33536ca00b55681064ad5d9e6877c9be25b89bb8524614bc1dd3d97f017",
+   "lfovel.c": "84fcd879cba7315bec0083196bd1e95590c3e1e82912835ff4659546dc65dae6"
+  }
+ },
+ "signature": null
+}

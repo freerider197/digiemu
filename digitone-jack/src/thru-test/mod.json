@@ -1,0 +1,26 @@
+{
+ "id": "thru-test",
+ "version": "0.1",
+ "license": "GPL-2.0-or-later",
+ "title": "THRU TEST",
+ "category": "Utilities",
+ "author": "jack",
+ "description": "One-off experiment: with THRU PORT FUNC on DIN 24/48 and the sequencer stopped, sends one MIDI note per second on the two THRU/SYNC B sync pins (4 candidates, 10 s each, notes 60/62/64/65) to see whether the jack can carry MIDI.",
+ "device": "digitone-mk1",
+ "os": "1.44",
+ "sources": [
+  "glue.s",
+  "thru.c"
+ ],
+ "requires": [
+  "core"
+ ],
+ "subscribe": [
+  {
+   "event": "ev_tick",
+   "fn": "tt_tick",
+   "order": 60
+  }
+ ],
+ "sites": []
+}

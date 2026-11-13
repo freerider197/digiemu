@@ -1,0 +1,68 @@
+{
+ "id": "lfo-vel",
+ "version": "2.1",
+ "license": "GPL-2.0-or-later",
+ "title": "LFO VELOCITY + HUM",
+ "category": "MIDI",
+ "author": "jack",
+ "description": "MIDI track LFO: the destination that was Aftertouch now modulates note velocity (shown as SRC:Velocity in the list and VEL on the knob; the MIDI Source page AT knob also reads VEL). No aftertouch messages are sent by the LFO. HUM (knob E on the MIDI TRIG page, 0-60): random velocity of -HUM..+HUM per trig, same for all notes of a chord; press knob E to reset. With HUM on, two trigs in a row are always at least 15 apart in velocity.",
+ "device": "digitone-mk1",
+ "os": "1.44",
+ "sources": [
+  "glue.s",
+  "lfovel.c"
+ ],
+ "requires": [
+  "core"
+ ],
+ "sites": [
+  {
+   "addr": "0x400f4846",
+   "stock": "1f6a00230047",
+   "op": "jsr",
+   "target": "lfovel_note"
+  },
+  {
+   "addr": "0x400f4792",
+   "stock": "20444e904fef0014",
+   "op": "jsr",
+   "target": "lfovel_mod"
+  },
+  {
+   "addr": "0x4018f6b4",
+   "stock": "401d6c43",
+   "op": "bytes",
+   "new": "401d6667",
+   "kind": "data"
+  },
+  {
+   "addr": "0x4018f6bc",
+   "stock": "401e31cc",
+   "op": "bytes",
+   "new": "401dcb24",
+   "kind": "data"
+  }
+ ],
+ "subscribe": [
+  {
+   "event": "ev_enc",
+   "fn": "lfovel_enc",
+   "order": 40
+  },
+  {
+   "event": "ev_key",
+   "fn": "lfovel_key",
+   "order": 40
+  },
+  {
+   "event": "ev_draw",
+   "fn": "lfovel_draw",
+   "order": 60
+  },
+  {
+   "event": "ev_tick",
+   "fn": "lfovel_tick",
+   "order": 60
+  }
+ ]
+}

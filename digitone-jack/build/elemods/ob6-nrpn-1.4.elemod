@@ -1,0 +1,365 @@
+{
+ "elemod": 2,
+ "id": "ob6-nrpn",
+ "version": "1.4",
+ "title": "OB-6 NRPN",
+ "description": "On MIDI channel 14, CCs from the Digitone's MIDI tracks are sent to the OB-6 as NRPNs (full parameter set, scaled to each parameter's range). CC numbers that are OB-6 CCs keep their meaning; NRPN-only parameters use free numbers. See the CC map. Set the OB-6's Param Rcv to NRPN.",
+ "category": "MIDI",
+ "author": "jack",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitone-mk1",
+  "product": "Digitone mk1",
+  "os": "1.44",
+  "syx_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+  "section3_sha256": "fce648a97c6c5d93b961732e8f8db6b02e0820c6d344c7e2131fa05a4b3168e4",
+  "section3_len": 2736304
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1262,
+   "parts": [
+    [
+     "hex",
+     "2f2f00084eb900000000588f7202b08167184a806610"
+    ],
+    [
+     "stock",
+     "0x4002334a",
+     8
+    ],
+    [
+     "hex",
+     "4eb9400f3c1a508f15835800"
+    ],
+    [
+     "stock",
+     "0x4003ec34",
+     12
+    ],
+    [
+     "hex",
+     "00fc71900c80000000bd660001381228000110280002240184804a026d000126738141f9000000001630180075830c82000000ff6700010e1439419b18ed75820c82000000f0620001a041f9000000001a30180041f90000000075b0180041f90000000079b01800718008050000670000e02a02da84e28d7c40bc80650001769a844c050800068000000020ec88d0842400ee8a79b9000000007c7f41f900000000c086c486123018000c84000000ff670000b87bb9000000000c85000000ff670001047d82b484670001487f80b085670000f4307cbd63ef8cef8e1d43fff61d41fff93d48fff4307cbd62d887dc853d48fff7bc846300008a180012027a2676067cbd13c0000000001d45fffb1d44fffc1d43fffe1d41ffff13c200000000486efff44878000c1d46fffa1d46fffd4eb9400f3c1a508f70014cee00fcffdc4e5e4e754cee00fc"
+    ],
+    [
+     "stock",
+     "0x40133cca",
+     8
+    ],
+    [
+     "hex",
+     "94844c0028007a7f06820000003f4c4520022002d0846000ff28307cbd63383cbd621d43fff61d41fff93d48fff43d44fff7180212007a0676267cbd13c0000000001d45fffb1d44fffc1d43fffe1d41ffff13c200000000486efff44878000c1d46fffa1d46fffd4eb9400f3c1a508f70016000ff763a3cbd633c3cbd621d43fff61d41fff91802120076263d45fff43d46fff77a0660a24cee00fcffdc70024e5e4e7594850680ffffffc04c020800783f06800000001f4c440000d0856000fe80383cbd62307cbd631d43fff61d41fff912027a2676063d44fff73d48fff418006000fece"
+    ],
+    [
+     "stock",
+     "0x4018d45a",
+     18
+    ],
+    [
+     "stock",
+     "0x4018d00a",
+     8
+    ],
+    [
+     "hex",
+     "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x4018d5c4",
+     16
+    ],
+    [
+     "hex",
+     "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000fa00030000ffff0101010c0106057f0101fffffffeff04fefe"
+    ],
+    [
+     "stock",
+     "0x4018d458",
+     12
+    ],
+    [
+     "hex",
+     "ff0100ff"
+    ],
+    [
+     "stock",
+     "0x4026e296",
+     10
+    ],
+    [
+     "hex",
+     "000000000104020009000001003c00ffffff0000ff3cfefffeff01010301010101010101010105ffff01"
+    ],
+    [
+     "stock",
+     "0x4018d466",
+     8
+    ],
+    [
+     "hex",
+     "0201ff01fe01010101010109"
+    ],
+    [
+     "stock",
+     "0x40240036",
+     8
+    ],
+    [
+     "stock",
+     "0x4018f0ec",
+     14
+    ],
+    [
+     "hex",
+     "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x4018f308",
+     8
+    ],
+    [
+     "hex",
+     "001c00001b40010a0b1f1c1d1e41075b20211e58595a0f1078003e3f0000000000000000424700434445464d00004e4f505100000000202122002300001d00000002030400002d05060708095d5e5f60616211121314151677797a7b0000000000002d2e2f3031326d6e6f707172737f0102"
+    ],
+    [
+     "stock",
+     "0x4022b314",
+     10
+    ],
+    [
+     "hex",
+     "ffffff01ff00"
+    ],
+    [
+     "stock",
+     "0x4018d45a",
+     8
+    ],
+    [
+     "hex",
+     "01010108"
+    ],
+    [
+     "stock",
+     "0x4018d5ca",
+     8
+    ],
+    [
+     "hex",
+     "0101"
+    ],
+    [
+     "stock",
+     "0x402296fe",
+     12
+    ],
+    [
+     "stock",
+     "0x401d42d6",
+     8
+    ],
+    [
+     "stock",
+     "0x401a91f2",
+     10
+    ],
+    [
+     "hex",
+     "010101ff01ffff00ff00ff00"
+    ],
+    [
+     "stock",
+     "0x402496ba",
+     10
+    ],
+    [
+     "hex",
+     "00000000"
+    ],
+    [
+     "stock",
+     "0x401cf4ae",
+     8
+    ],
+    [
+     "stock",
+     "0x4018d468",
+     10
+    ],
+    [
+     "hex",
+     "0000000000000000000000000000010101ffffffffffffffffff"
+    ]
+   ]
+  }
+ },
+ "symbols": {
+  "APPEND": [
+   "abs",
+   1074740250
+  ],
+  "T_MSB": [
+   ".run",
+   1134
+  ],
+  "T_FL": [
+   ".run",
+   622
+  ],
+  "T_HI": [
+   ".run",
+   750
+  ],
+  "T_LO": [
+   ".run",
+   878
+  ],
+  "g_msb": [
+   ".run",
+   621
+  ],
+  "T_LSB": [
+   ".run",
+   1006
+  ],
+  "g_lsb": [
+   ".run",
+   620
+  ],
+  "ob6_nrpn_xlate": [
+   ".run",
+   44
+  ],
+  "ob6_nrpn_hook": [
+   ".run",
+   0
+  ]
+ },
+ "exports": [
+  "ob6_nrpn_hook",
+  "ob6_nrpn_xlate"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   6,
+   "abs32",
+   "sec:.run",
+   44
+  ],
+  [
+   ".run",
+   90,
+   "abs32",
+   "sec:.run",
+   1134
+  ],
+  [
+   ".run",
+   130,
+   "abs32",
+   "sec:.run",
+   622
+  ],
+  [
+   ".run",
+   140,
+   "abs32",
+   "sec:.run",
+   750
+  ],
+  [
+   ".run",
+   150,
+   "abs32",
+   "sec:.run",
+   878
+  ],
+  [
+   ".run",
+   204,
+   "abs32",
+   "sec:.run",
+   621
+  ],
+  [
+   ".run",
+   212,
+   "abs32",
+   "sec:.run",
+   1006
+  ],
+  [
+   ".run",
+   236,
+   "abs32",
+   "sec:.run",
+   620
+  ],
+  [
+   ".run",
+   316,
+   "abs32",
+   "sec:.run",
+   620
+  ],
+  [
+   ".run",
+   338,
+   "abs32",
+   "sec:.run",
+   621
+  ],
+  [
+   ".run",
+   452,
+   "abs32",
+   "sec:.run",
+   620
+  ],
+  [
+   ".run",
+   474,
+   "abs32",
+   "sec:.run",
+   621
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x400f3d72",
+   "len": 8,
+   "stock_sha256": "250008bd5ca650cecd234f41d8c9456fffb0d2144c427a2650eb617a16a8a98c",
+   "new": "4eb9000000004e71",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:ob6_nrpn_hook",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {},
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "glue.s": "b1536d2bd3361828ff679c84f18128ad95119ee32b189d9a41cfd39a97b7702e",
+   "ob6nrpn.c": "c1d6fe10c02105a18d63838ef2ebf414aee926fd429c1b3e045f27d7c8f61160"
+  }
+ },
+ "signature": null
+}

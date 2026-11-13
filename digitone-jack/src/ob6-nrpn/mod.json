@@ -1,0 +1,12 @@
+{
+ "id": "ob6-nrpn", "version": "1.4",
+ "license": "GPL-2.0-or-later",
+ "title": "OB-6 NRPN", "category": "MIDI", "author": "jack",
+ "description": "On MIDI channel 14, CCs from the Digitone's MIDI tracks are sent to the OB-6 as NRPNs (full parameter set, scaled to each parameter's range). CC numbers that are OB-6 CCs keep their meaning; NRPN-only parameters use free numbers. See the CC map. Set the OB-6's Param Rcv to NRPN.",
+ "device": "digitone-mk1", "os": "1.44",
+ "sources": ["glue.s", "ob6nrpn.c"],
+ "requires": ["core"],
+ "sites": [
+  {"addr": "0x400f3d72", "stock": "4ebafea615835800", "op": "jsr", "target": "ob6_nrpn_hook"}
+ ]
+}
